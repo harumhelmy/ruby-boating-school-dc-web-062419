@@ -1,6 +1,6 @@
 class BoatingTest
 
-    attr_accessor :student, :instructor
+    attr_accessor :student, :instructor, :test_status, :test_name
 
     @@all = []
 
@@ -11,6 +11,15 @@ class BoatingTest
         @instructor = instructor
         self.class.all << self
     end 
+
+    # def student 
+    #     @student 
+    # end
+
+    # def student=(new_student)
+    #     @student = new_student
+    # end
+    
 
     def self.all
         @@all

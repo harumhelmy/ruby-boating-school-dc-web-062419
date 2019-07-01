@@ -35,16 +35,11 @@ class Student
         end
     end
 
-
     def grade_percentage
-    
+        test_pass = self.find_tests.select do |test|
+            test.test_status == "passed"
+        end
+        (test_pass.size.to_f / self.find_tests.size.to_f) * 100
     end
-
-
-
-
-
-
-
 
 end
