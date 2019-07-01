@@ -15,9 +15,12 @@ no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
 power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
 power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
 
-puff.pass_student(spongebob, "Don't Crash 101")
-krabs.pass_student(spongebob, "Power Steering 201")
-
+# puff.pass_student(spongebob, "Don't Crash 101")
+# krabs.pass_student(spongebob, "Power Steering 201")
+p BoatingTest.all
+testing = puff.pass_student(patrick, "Don't Crash 101")
+p BoatingTest.all
 binding.pry
+
 #leave this here to ensure binding.pry isn't the last line
 0
